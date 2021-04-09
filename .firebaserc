@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pink-5ac5a": {
+      "hosting": {
+        "pink-angular": [
+          "pink-5ac5a"
+        ]
+      }
+    }
+  }
+}

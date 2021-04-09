@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faTicketAlt, faCamera, faFont, faTabletAlt } from "@fortawesome/free-solid-svg-icons"
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,10 @@ export class HomeComponent implements OnInit {
   faFont = faFont;
   faTabletAlt = faTabletAlt;
 
-  constructor() { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
+    console.log(this.authService.token)
   }
 
 }
