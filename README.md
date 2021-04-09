@@ -1,7 +1,7 @@
 # PinkAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
-This is an app for demostration purposes
+This is an app for demonstration purposes, built on Angular
 
 ## Development server
 
