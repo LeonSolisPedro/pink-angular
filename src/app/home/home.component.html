@@ -75,34 +75,13 @@
 
 
 <section *ngIf="authService.token" class="container explanation py-4">
-  <div class="row py-4">
+  <div *ngFor="let post of posts" class="row py-4">
     <div class="col-md-3">
-      <img src="https://picsum.photos/300/200" class="img-fluid mb-3" alt="Responsive image">
+      <img src="{{post.imgbanner}}" class="img-fluid mb-3" alt="Responsive image">
     </div>
     <div class="col-md-9">
-      <h3>Hello there</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magni numquam, blanditiis repudiandae nisi
-        commodi harum non nam eum, atque nesciunt ipsum beatae magnam pariatur! Labore hic non veniam odio?</p>
-    </div>
-  </div>
-  <div class="row py-4">
-    <div class="col-md-3">
-      <img src="https://picsum.photos/300/200" class="img-fluid mb-3" alt="Responsive image">
-    </div>
-    <div class="col-md-9">
-      <h3>Hello there</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magni numquam, blanditiis repudiandae nisi
-        commodi harum non nam eum, atque nesciunt ipsum beatae magnam pariatur! Labore hic non veniam odio?</p>
-    </div>
-  </div>
-  <div class="row py-4">
-    <div class="col-md-3">
-      <img src="https://picsum.photos/300/200" class="img-fluid mb-3" alt="Responsive image">
-    </div>
-    <div class="col-md-9">
-      <h3>Hello there</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magni numquam, blanditiis repudiandae nisi
-        commodi harum non nam eum, atque nesciunt ipsum beatae magnam pariatur! Labore hic non veniam odio?</p>
+      <h3>{{post.title}}</h3>
+      <p>{{post.content}}</p>
     </div>
   </div>
 </section>

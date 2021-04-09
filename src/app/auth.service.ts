@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
+import axios from "axios"
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +18,7 @@ export class AuthService {
       const result = await this.firebaseAuth.signInWithEmailAndPassword(email, password)
       this.user = result
       this.token = await (await this.firebaseAuth.currentUser).getIdToken()
+      axios.defaults.headers.common = {'Authorization': `Bearer ${this.token}`}
       alert(`Welcome ${result.user.email}`)
       return true
     } catch (error) {
