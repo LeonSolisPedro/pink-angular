@@ -1,12 +1,23 @@
 <div class="container">
-  
+  <div class="row">
+    <div class="col-12">
+      <h1 class="text-center">Login</h1>
+      <form style="max-width: 480px;" class="mx-auto" #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+        <div class="form-group">
+          <label>Email</label>
+          <input class="form-control" type = "email" name = "email" placeholder = "email@wintercr.com" ngModel>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input class="form-control" type = "password" name = "password" ngModel>
+        </div>
+        
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
 </div>
-
-
-<form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
-  <input type = "email" name = "email" placeholder = "email@wintercr.com" ngModel>
-  <br/>
-  <input type = "password" name = "password" ngModel>
-  <br/>
-  <input type = "submit" value = "submit">
-</form>
