@@ -1,0 +1,45 @@
+.carousel-caption h1 {
+  font-size: 60px;
+  font-family: "OpenSans-SemiBold";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+
+.explanation {
+  padding: 40px 90px;
+}
+
+
+.circleBase {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+
+.circle-blue {
+  background-color: #4eb9f4;
+}
+
+.circle-green {
+  background-color: #6fc125;
+}
+
+.circle-red {
+  background-color: #ff5649;
+}
+
+.circle-orange {
+  background-color: #e48f23;
+}
+
+.circleBase fa-icon {
+  font-size: 50px;
+}

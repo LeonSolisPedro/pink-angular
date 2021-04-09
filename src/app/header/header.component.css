@@ -1,0 +1,20 @@
+header .navbar-brand {
+  font-family: "Parisienne";
+  font-size: 30px;
+}
+
+header .navbar-brand .pink {
+  color: #b73958;
+}
+
+
+header .botonlogueo {
+  margin-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+header .nav-item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
